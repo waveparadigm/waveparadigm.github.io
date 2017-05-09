@@ -1,0 +1,249 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url("../img/bg.png");
+	background-repeat: repeat;
+}
+
+main {
+	width: 60%;
+	border: 4px lightgray solid;
+	border-radius: 5px;
+	margin: auto;
+	background-color: #343434;
+
+	text-align: center;
+	color: white;
+
+	font-size: 22px;
+	font-family: "Open Sans", sans-serif;
+}
+
+main h1 {
+	margin-bottom: 0px;
+}
+
+main button {
+	background-color: gray;
+	font-family: "Open Sans", sans-serif;
+	box-shadow: none;
+	border: none;
+	border-radius: 5px;
+
+	width: auto;
+	height: auto;
+	color: white;
+
+	font-size: 20px;
+	padding: 15px;
+}
+
+main p {
+	padding: 12px;
+}
+
+main ul {
+	text-align: left;
+	font-size: 18px;
+	width: 95%;
+}
+
+nav {
+	width: 60%;
+	margin: auto;
+	height: 128px;
+
+	font-size: 26px;
+	font-family: "Open Sans", sans-serif;
+
+	text-align: right;
+}
+
+.navHolder {
+	height: 128px;
+	width: auto;
+	display: block;
+	padding-top: 7%;
+}
+
+nav ul {
+	list-style: none;
+	display: inline;
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.logo {
+	height: 128px;
+	width: auto;
+	float: left;
+}
+
+.left {
+	text-align: left;
+	padding-left: 28px;
+}
+
+main a {
+	color: skyblue;
+}
+
+.date {
+	font-style: italic;
+	font-size: 14px;
+	display: inline;
+	margin-right: 10px;
+}
+
+
+.game {
+	border: 1px white solid;
+	width: 60% !important;
+	display: inline-block;
+	background-color: #bbb;
+	color: black;
+	text-align: left;
+
+	height: auto;
+
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+
+.game section {
+	float: left;
+	width: 65%;
+	border-left: 1px lightgray solid;
+	padding-left: 20px;
+	height: 100%;
+	padding-right: 4%;
+}
+
+.game img {
+	height: auto;
+	width: 24%;
+
+	max-height: 90%;
+	float: left;
+	margin: 10px;
+}
+
+.game h1 {
+	font-size: 26px;
+}
+
+.game p {
+	padding: 0;
+	font-size: 13px;
+}
+
+.game p a {
+	font-size: 13px;
+}
+
+.game a {
+	color: indianred;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 1750px) {
+	nav {
+		width: 75% !important;
+		font-size: 30px;
+	}
+
+	.navHolder {
+		padding-top: 5.5%;
+	}
+
+	main {
+		width: 75% !important;
+	}
+
+}
+
+@media only screen and (max-width: 1550px) {
+	nav {
+		width: 95% !important;
+		font-size: 34px;
+	}
+
+	.navHolder {
+		padding-top: 4.5%;
+	}
+
+	main {
+		width: 95% !important;
+	}
+
+	.game {
+		width: 65% !important;
+	}
+
+	.game section {
+		width: 60%;
+		padding-right: 10%;
+	}
+}
+
+@media only screen and (max-width: 1165px) {
+	nav {
+		width: 100%;
+		height: auto;
+		text-align: center;
+
+		font-size: 48px;
+		padding-bottom: 14px;
+	}
+
+	nav ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	nav ul li{
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.logo {
+		width: 100%;
+		height: auto;
+	}
+
+	.navHolder {
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+	}
+
+	.game {
+		width: 90% !important;
+		height: auto;
+	}
+
+	.game section {
+		width: 50%;
+		height: 100%;
+	}
+
+	.game img {
+		width: 30%;
+		height: auto;
+		padding-top: 10px;
+	}
+}

@@ -2,8 +2,54 @@
 <html>
 <head>
 	<title>WaveParadigm</title>
+
+	<link rel="stylesheet" type="text/css" href="public/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="public/home.js"></script>
+
 </head>
 <body>
-	<p>I'm WaveParadigm -- a Computer Science student at Stevens Institute of Technology. I write music and make games!</p>
+	<nav>
+		<img class="logo" src="img/logo-banner.png" />
+		<div class="navHolder">
+			<ul>
+				<li><a href="index.html">>Home<</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="info.html">Info</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<main>
+		<h1>Home</h1>
+
+		<p>I'm WaveParadigm -- a Computer Science student at Stevens Institute of Technology. I write music and make games!</p>
+
+		<iframe src='' frameborder='0' scrolling='no' allowfullscreen width='480' height='270' id="gfy"></iframe>
+		<br />
+		<button onclick="newGfy()">New Gif</button>
+
+		<h1>Recent</h1>
+		<ul>
+			<li>
+				<p><div class="date">2017-5-9</div> Finally got a WaveParadigm website up and running! Development is still in progress, and I have a lot to show. Acquisition of the waveparadigm .com domain is ongoing.</p>
+			</li>
+		</ul>
+
+		<a class="twitter-timeline" data-width="60%" data-height="500" data-theme="dark" href="https://twitter.com/Wave_Paradigm">Tweets by Wave_Paradigm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+		<h1>History</h1>
+		<p>Over 30 games bear the WaveParadigm name -- made in a variety of tools ranging from Cave Story modding programs to Unreal Engine 4. I've tackled platformers, puzzle games, racing games, and more.</p>
+
+		<p>I have written well over 25 hours of music in my life, using Pro Tools and FL Studio.</p>
+		<p>Upon entering Stevens I joined the <a href="http://sgdc.ml">Stevens Game Development Club</a>; in my sophomore year, I became the organization's President. Education, competition, and comraderie are all things I strive to promote in the game dev world.</p>
+	</main>
 </body>
 </html>
