@@ -203,7 +203,7 @@ main a {
 		height: auto;
 		text-align: center;
 
-		font-size: 48px;
+		font-size: 34px;
 		padding-bottom: 14px;
 	}
 
@@ -245,5 +245,14 @@ main a {
 		width: 30%;
 		height: auto;
 		padding-top: 10px;
+	}
+
+	#gfy {
+		width: 75%;
+		height: auto;
+	}
+
+	main ul {
+		width: 85%;
 	}
 }
