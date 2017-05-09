@@ -256,3 +256,29 @@ main a {
 		width: 85%;
 	}
 }
+
+@media only screen and (max-width: 800px) {
+	.game {
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+
+	.game img {
+		display: inline-block;
+		height: 128px;
+		width: auto;
+	}
+
+	.imagewrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.game section {
+		width: 100%;
+		padding-left: 0px;
+		border: none;
+	}
+}
