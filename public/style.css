@@ -281,4 +281,8 @@ main a {
 		padding-left: 0px;
 		border: none;
 	}
+
+	.left {
+		padding-left: 4px;
+	}
 }
