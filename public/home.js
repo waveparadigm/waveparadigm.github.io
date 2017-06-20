@@ -6,6 +6,7 @@ var myGfys = [
 	"https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", //Tracks
 	"https://gfycat.com/ifr/ImportantTatteredAgama", //Meltdown
 	"https://gfycat.com/ifr/IdioticDiligentDassie", //Big Palladium
+	"https://gfycat.com/ifr/DismalFamiliarAlaskankleekai", //VRange
 ];
 
 var a = -1;
