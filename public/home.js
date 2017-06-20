@@ -1,21 +1,25 @@
+var myGfys = [
+	"https://gfycat.com/ifr/WetHoarseAnnelid", //Spherical Saunter M
+	"https://gfycat.com/ifr/UnevenHairyBorzoi", //We 2 Guys (needs update)
+	"https://gfycat.com/ifr/TerrificDopeyFlyingfish", //Pause
+	"https://gfycat.com/ifr/ColorfulKindheartedBeardedcollie", //Adventures of Bean (needs update)
+	"https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", //Tracks
+	"https://gfycat.com/ifr/ImportantTatteredAgama", //Meltdown
+	"https://gfycat.com/ifr/IdioticDiligentDassie", //Big Palladium
+];
+
+var a = -1;
 
 window.onload = function() {
+	a = Math.random() * (myGfys.length - 1);
 	newGfy();
 }
 
 function newGfy() {
 	var gfy = document.getElementById("gfy");
-	var chosenGfy = gfy.src;
-	var myGfys = [
-		"https://gfycat.com/ifr/RegularAltruisticHarrierhawk",
-		"https://gfycat.com/ifr/UnevenHairyBorzoi",
-		"https://gfycat.com/ifr/ExhaustedCircularAoudad",
-		"https://gfycat.com/ifr/ColorfulKindheartedBeardedcollie",
-		"https://gfycat.com/ifr/ConstantUltimateIchthyosaurs",
-		"https://gfycat.com/ifr/ImportantTatteredAgama",
-	];
-	while (chosenGfy == gfy.src) {
-		chosenGfy = myGfys[Math.floor(Math.random() * myGfys.length)];
-	}
+	a = Math.floor((a + 1) % myGfys.length);
+	chosenGfy = myGfys[a];
+	console.log(a);
+
 	gfy.src = chosenGfy;
 }
