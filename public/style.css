@@ -20,7 +20,7 @@ main {
 	color: white;
 
 	font-size: 22px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 main h1 {
@@ -52,13 +52,17 @@ main ul {
 	width: 95%;
 }
 
+main ul li {
+	margin-bottom: 8px;
+}
+
 nav {
 	width: 60%;
 	margin: auto;
 	height: 128px;
 
 	font-size: 26px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "PT Sans", sans-serif;
 
 	text-align: right;
 }
@@ -68,6 +72,27 @@ nav {
 	width: auto;
 	display: block;
 	padding-top: 7%;
+}
+
+#gifTitle {
+	font-style: italic;
+	padding-bottom: 8px;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.indicator {
+	height: 12px;
+	width: 12px;
+	border: 1px solid gray;
+	border-radius: 2em;
+	display: inline-block;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.active {
+	background-color: white;
 }
 
 nav ul {

@@ -4,7 +4,7 @@
 	<title>WaveParadigm</title>
 
 	<link rel="stylesheet" type="text/css" href="public/style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,17 +34,21 @@
 
 		<iframe src='' frameborder='0' scrolling='no' allowfullscreen width='640' height='360' id="gfy"></iframe>
 		<br />
-		<button onclick="newGfy()">Next Gif</button>
+		<label id="gifTitle">Loading gifs...</label>
+		<div id="gifIndicator"></div>
+		<button onclick="prevGfy()"><--</button>
+		<button onclick="nextGfy()">--></button>
 
 		<h1>Recent</h1>
-		<ul>
+		<ul id="blog">
+			<!--
 			<li> 
 				<div class="date">2017-6-20</div> Added some more gifs and fixed IE support for the site. Got ahold of the @WaveParadigm Twitter handle, though .com remains illustrious. For now the site is at waveparadigm.tk just to give it a shorter name. Big Palladium is in progress plus level design for Spherical Saunters R/M, Pause, and We 2 Guys. Hoo boy.
 			</li>
 
 			<li>
 				<div class="date">2017-5-9</div> Finally got a WaveParadigm website up and running! Development is still in progress, and I have a lot to show. Acquisition of the waveparadigm .com domain is ongoing.
-			</li>
+			</li> -->
 		</ul>
 
 		<a class="twitter-timeline" data-width="60%" data-height="500" data-theme="dark" href="https://twitter.com/WaveParadigm">Tweets by Wave_Paradigm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
