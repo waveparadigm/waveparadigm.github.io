@@ -3,7 +3,7 @@
 var games = [
 	{
 		title: "Big Palladium",
-		description: "A video-boardgame about taking financial risks. Do you bet big on the Palladium stock market, or do you stick to slow, steady growth? See which strategy will pan out in short, exciting game sessions. 1-4 players.",
+		description: "A video-boardgame about taking financial risks. Do you bet big on the Palladium stock market, or do you stick to slow, steady growth? See which strategy will pan out in short, exciting game sessions. 1-4 players. Summer 2017.",
 		image: "img/games/bpd.png",
 		links: [["", "Unavailable"]]
 	},

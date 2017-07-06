@@ -20,7 +20,7 @@ main {
 	color: white;
 
 	font-size: 22px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "latolight", sans-serif;
 }
 
 main h1 {
@@ -29,7 +29,7 @@ main h1 {
 
 main button {
 	background-color: gray;
-	font-family: "Open Sans", sans-serif;
+	font-family: "latolight", sans-serif;
 	box-shadow: none;
 	border: none;
 	border-radius: 5px;
@@ -62,7 +62,7 @@ nav {
 	height: 128px;
 
 	font-size: 26px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "latolight", sans-serif;
 
 	text-align: right;
 }
@@ -175,12 +175,13 @@ main a {
 }
 
 .game p {
+	font-family: "latoregular", sans-serif;
 	padding: 0;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .game p a {
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .game a {
