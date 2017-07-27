@@ -10,13 +10,14 @@ var myGfys = [
 	["https://gfycat.com/ifr/WetHoarseAnnelid", "Spherical Saunter M"], 
 	["https://gfycat.com/ifr/ElaborateKindlyGoat", "The Adventures of Bean"], 
 	["https://gfycat.com/ifr/DeepEnchantingAnteater", "We 2 Guys"], 
-	["https://gfycat.com/ifr/IdioticDiligentDassie", "Big Palladium"], 
+	["https://gfycat.com/ifr/OilyVigorousBlacklab", "Big Palladium"], 
 ];
 
 var blogEntries = [
 	["2017-5-9", "Finally got a WaveParadigm website up and running! Development is still in progress, and I have a lot to show. Acquisition of the waveparadigm .com domain is ongoing."],
 	["2017-6-20", "Added some more gifs and fixed IE support for the site. Got ahold of the @WaveParadigm Twitter handle, though .com remains illustrious. For now the site is at waveparadigm.tk just to give it a shorter name. Big Palladium is in progress plus level design for Spherical Saunters R/M, Pause, and We 2 Guys. Hoo boy."],
 	["2017-7-5", "Updated the We 2 Guys gif. Big Palladium is approaching a very playable state, which is exciting. Once that's wrapped up I'm going to go back to work on a playable demo of We 2 Guys, then continue work on Spherical Saunters R and M."],
+	["2017-7-27", "Big Palladium is almost feature complete. Updated its gif in the indicator -- all that's left is some new map designs and some QoL changes."],
 ];
 
 blogEntries.reverse();
