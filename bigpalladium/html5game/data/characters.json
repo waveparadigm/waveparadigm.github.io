@@ -1,0 +1,58 @@
+[{
+    "bradley": {
+        "sprite": "spr_bradley",
+        "head": "spr_bradley_head",
+        "name": "BRADLEY",
+        "menuName": "Bradley",
+        "desc": "BRADLEY\nAge: 25\nRecent college grad\nEverything to lose\nSucks up by talking about videogames with superiors\nSpecial Ability: Always pays credit card on time"
+    },
+    "drguy": {
+        "sprite": "spr_drguy",
+        "head": "spr_drguy_head",
+        "name": "DR. GUY",
+        "menuName": "Dr. Guy",
+        "desc": "DR. GUY\nAge: 60\nTwo degrees overqualified\nPart of his contract includes naps\nSteals Chad’s food from the fridge\nSpecial Ability: Coworkers he doesn’t like 'disappear'"
+    },
+    "finnley": {
+        "sprite": "spr_finnley",
+        "head": "spr_finnley_head",
+        "name": "FINNLEY",
+        "menuName": "Finnley",
+        "desc": "FINNLEY\nAge: 39\nLoves his wife and kids\nChess savage; Takes no prisoners\nJust wants to go home at 3\nSpecial Ability: Remembers your birthday every year"
+    },
+    "chad": {
+        "sprite": "spr_chad",
+        "head": "spr_chad_head",
+        "name": "CHAD",
+        "menuName": "Chad",
+        "desc": "CHAD\nAge: 23\nCannot spell college\nCan spell 'moisturizer'\nAlways texting (but who?)\nSpecial Ability: Any mistakes he makes are someone else’s fault"
+    },
+    "pamela": {
+    	"sprite": "spr_pamela",
+    	"head": "spr_pamela_head",
+    	"name": "PAMELA",
+    	"menuName": "Pamela",
+    	"desc": "PAMELA\nAge: 43\nBuff soccer mom\nUsed to sleep, 'before the first kid'\nWill not speak aloud until 11AM\nSpecial Ability: Can type 150WPM perfect, eyes closed"
+    },
+    "gina": {
+    	"sprite": "spr_gina",
+    	"head": "spr_gina_head",
+    	"name": "GINA",
+    	"menuName": "Gina",
+    	"desc": "GINA\nAge: 22\nHas seen anime. All the anime.\nFull millennial - gets an extra paycheck to run the company 'Insta'\nFluent in coding languages you 'probably haven’t even heard of'\nSpecial Ability: Always has pockets"
+    },
+    "truck": {
+    	"sprite": "spr_truck",
+    	"head": "spr_truck_head",
+    	"name": "TRUCK",
+    	"menuName": "Truck",
+    	"desc": "TRUCK\nMPG: 19\nStick Shift\nAt least eight wheels\nHas delivered all kinds of shit\nSpecial ability: honk (Select)"
+    },
+    "jeff": {
+    	"sprite": "spr_jeff",
+    	"head": "spr_jeff_head",
+    	"name": "JEFF",
+    	"menuName": "Jeff",
+    	"desc": "JEFF\nAge: 21\nHas been charging a power drill for ten years\nAbsurdist philosophy meshes with office politics\nOpinionated intern\nSpecial Ability: Can sleep through anything"
+    }
+}]

@@ -1,0 +1,18 @@
+[
+	{
+		"type": "plain",
+		"endEvent": "-1"
+	},
+	{
+		"name": "Joe",
+		"portraitType": "left",
+		"portrait": "spr_example_portrait",
+		"text": "Hey Bob, how's it going?"
+	},
+	{
+		"name": "Bob",
+		"portraitType": "right",
+		"portrait": "spr_example_portrait",
+		"text": "It's going okay, Joe."
+	}
+]

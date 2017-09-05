@@ -1,0 +1,13 @@
+[
+	{
+		"type": "yesno",
+		"yesPath": "conversations/plainMessage.json",
+		"noPath": "conversations/plainMessage2.json"
+	},
+	{
+		"name": "?????",
+		"portraitType": "center",
+		"portrait": "spr_example_portrait",
+		"text": "Let me ask you this:^9 yes or no?"
+	}
+]
