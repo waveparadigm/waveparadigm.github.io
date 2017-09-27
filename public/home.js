@@ -18,6 +18,7 @@ var blogEntries = [
 	["2017-6-20", "Added some more gifs and fixed IE support for the site. Got ahold of the @WaveParadigm Twitter handle, though .com remains illustrious. For now the site is at waveparadigm.tk just to give it a shorter name. Big Palladium is in progress plus level design for Spherical Saunters R/M, Pause, and We 2 Guys. Hoo boy."],
 	["2017-7-5", "Updated the We 2 Guys gif. Big Palladium is approaching a very playable state, which is exciting. Once that's wrapped up I'm going to go back to work on a playable demo of We 2 Guys, then continue work on Spherical Saunters R and M."],
 	["2017-7-27", "Big Palladium is almost feature complete. Updated its gif in the indicator -- all that's left is some new map designs and some QoL changes."],
+	["2017-9-27", "Big Palladium 0.9.4 is out! All but a few stretch goals have been met and the game is fully playable. It's even seen some great playtime! Souloist was an involved project with midi sequencing, parsing midis to use as beatmaps, and Unity gameplay."],
 ];
 
 blogEntries.reverse();

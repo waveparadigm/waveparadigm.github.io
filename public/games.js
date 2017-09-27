@@ -8,6 +8,12 @@ var games = [
 		links: [["https://waveparadigm.itch.io/big-palladium", "itch.io"]]
 	},
 	{
+		title: "Souloist",
+		description: "You and up to four friends can work together as an understaffed band, who have to charge their instruments on stage with soul to keep the music alive! 1-4 players. Fall 2017.",
+		image: "img/games/souloist.png",
+		links: [["https://waveparadigm.itch.io/souloist", "itch.io"]]
+	},
+	{
 		title: "Pause",
 		description: "Pause and Unpause the world! Freeze time to guide an object to the end of 30 levels. Winter 2016.",
 		image: "img/games/pause.png",
