@@ -2,6 +2,12 @@
 
 var games = [
 	{
+		title: "Innis Gambit",
+		description: "Outwit your opponent in a game of strategy in skill. Put your multitasking abilities to the test as you control three units in real time, and try to destroy your enemy's Base Crystal while protecting your own! 2 players. Fall 2017.",
+		image: "img/games/innisgambit.png",
+		links: [["https://waveparadigm.itch.io/innis-gambit", "itch.io"]]
+	},
+	{
 		title: "Big Palladium",
 		description: "A video-boardgame about taking financial risks. Do you bet big on the Palladium stock market, or do you stick to slow, steady growth? See which strategy will pan out in short, exciting game sessions. 1-4 players. Summer 2017.",
 		image: "img/games/bpd.png",
