@@ -74,6 +74,10 @@ nav {
 	padding-top: 7%;
 }
 
+.navSelected {
+	font-weight: bolder;
+}
+
 #gifTitle {
 	font-style: italic;
 	padding-bottom: 8px;
