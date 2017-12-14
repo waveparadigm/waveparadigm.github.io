@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>1D Pong</title>
+</head>
+<body style="background-color: black;">
+	<p style="text-align: center;">
+	<canvas id="pongCanvas" width="480px" height="20px" style="background-color: black; margin: auto;">No Canvas Support :(</canvas>
+	</p><p style="text-align: center; color: white; font-family: Arial, sans-serif;">You're on some one-dimensional pong level thinking right now.</p>
+</body>
+
+<script>
+	var c = document.getElementById("pongCanvas");
+	var ctx = c.getContext("2d");
+	var x = 230;
+	var minX = 20;
+	var maxX = 440;
+	var goingRight = Math.random() > 0.5;
+
+	function tick() {
+		ctx.fillStyle="#000000";
+		ctx.fillRect(x, 0, 20, 20);
+
+		if (goingRight)
+			x += 1;
+		else
+			x -= 1;
+		if (x >= maxX)
+			goingRight = false; //todo play sound
+		else if (x <= minX)	
+			goingRight = true; //todo play sound
+		ctx.fillStyle="#FFFFFF";
+		ctx.fillRect(x, 0, 20, 20);
+	}
+
+	function init() {
+		ctx.fillStyle="#FFFFFF";
+		//draw left "paddle"
+		ctx.fillRect(0, 0, 20, 20);
+		ctx.fillRect(460, 0, 20, 20);
+		setInterval(tick, 2);
+	}
+
+	init();
+
+</script>
+
+
+</html>
