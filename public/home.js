@@ -1,7 +1,7 @@
 var myGfys = [
 	["https://gfycat.com/ifr/AdventurousInfatuatedGoat", "Spherical Saunter (the original)"],
 	["https://gfycat.com/ifr/MarvelousSmallDowitcher", "Rig 'er Bigger"], 
-	["https://gfycat.com//ifr/RawSpectacularAttwatersprairiechicken", "ThreeDee"],
+	["https://gfycat.com/ifr/ThisRingedAlbatross", "ThreeDee"],
 	["https://gfycat.com/ifr/DismalFamiliarAlaskankleekai", "VRange, a VR Target Range POC"], 
 	["https://gfycat.com/ifr/SolidValidHawk", "Memory"],
 	["https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", "Tracks"], 
