@@ -3,7 +3,7 @@
 var games = [
 	{
 		title: "Innis Gambit",
-		description: "Outwit your opponent in a game of strategy in skill. Put your multitasking abilities to the test as you control three units in real time, and try to destroy your enemy's Base Crystal while protecting your own! 2 players. Fall 2017.",
+		description: "Outwit your opponent in a game of strategy and skill. Put your multitasking abilities to the test as you control three units in real time, and try to destroy your enemy's Base Crystal while protecting your own! 2 players. Fall 2017.",
 		image: "img/games/innisgambit.png",
 		links: [["https://waveparadigm.itch.io/innis-gambit", "itch.io"]]
 	},
@@ -27,7 +27,7 @@ var games = [
 	},
 	{
 		title: "We 2 Guys",
-		description: "A sequel to the co-op masocore platformer made by myself and Alex Massenzio (<a href=\"alexmassenzio.github.io\">website</a>) for SGDC's Game Jam III. Redone in GameMaker: Studio and designed to be used for Intermediate GMS tutorials, the sequel is coming along very nicely. Summer 2017.",
+		description: "A sequel to the co-op masocore platformer made by myself and Alex Massenzio (<a href=\"http://alexmassenzio.github.io\">website</a>) for SGDC's Game Jam III. Redone in GameMaker: Studio and designed to be used for Intermediate GMS tutorials, the sequel is coming along very nicely. Summer 2017.",
 		image: "img/games/w2g.png",
 		links: [["", "Unavailable"]]
 	},
@@ -99,7 +99,7 @@ var games = [
 	},
 	{
 		title: "We Guys",
-		description: "A co-op platformer inspired by I Wanna Be the Guy created for SGDC's Game Jam III. Built to be horrifically difficult, we have seen pairs of players threaten all sorts of things on each other and on us upon playing it. Made with Alex Massenzio. Spring 2015.",
+		description: "A co-op platformer inspired by I Wanna Be the Guy created for SGDC's Game Jam III. Built to be horrifically difficult, we have seen pairs of players threaten all sorts of things on each other and on us upon playing it. Made with Alex Massenzio (<a href=\"http://alexmassenzio.github.io\">website</a>). Spring 2015.",
 		image: "img/games/weguys.png",
 		links: [["https://waveparadigm.itch.io/we-guys", "itch.io"]]
 	},
