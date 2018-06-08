@@ -35,6 +35,10 @@ let social = [
 		link: "https://waveparadigm.itch.io"
 	},
 	{
+		img: "./img/bandcamp.png",
+		link: "https://waveparadigm.bandcamp.com"
+	},
+	{
 		img: "./img/github.png",
 		link: "https://github.com/waveparadigm"
 	},
