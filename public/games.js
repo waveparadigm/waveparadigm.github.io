@@ -2,46 +2,34 @@
 
 var games = [
 	{
+		title: "Spherical Saunter M",
+		description: "Inspired by legends like Kororinpa, Marble Blast, and Super Monkey Ball, Spherical Saunter M has you tilting the world to guide a ball to the end of varied levels. 2017-2018.",
+		image: "./img/games/sphericalsaunterm.png",
+		links: [["https://waveparadigm.itch.io/spherical-saunter-m", "itch.io"]]
+	},
+	{
+		title: "Pause",
+		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces. 2016-2018.",
+		image: "img/games/pause.png",
+		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://adamgincel.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
+	},
+	{
 		title: "Innis Gambit",
 		description: "Outwit your opponent in a game of strategy and skill. Put your multitasking abilities to the test as you control three units in real time, and try to destroy your enemy's Base Crystal while protecting your own! 2 players. Fall 2017.",
 		image: "img/games/innisgambit.png",
 		links: [["https://waveparadigm.itch.io/innis-gambit", "itch.io"]]
 	},
 	{
+		title: "Arctic Mage Course",
+		description: "The mages of the arctic have a yearly tradition -- they head to the tropical islets of Manador, using their ice magic and their golf skills to sink shots across varied and challenging terrain. Spring 2018.",
+		image: "./img/games/arcticmagecourse.png",
+		links: [["https://waveparadigm.itch.io/arctic-mage-course", "itch.io"]]
+	},
+	{
 		title: "Big Palladium",
 		description: "A video-boardgame about taking financial risks. Do you bet big on the Palladium stock market, or do you stick to slow, steady growth? See which strategy will pan out in short, exciting game sessions. 1-4 players. Summer 2017.",
 		image: "img/games/bpd.png",
 		links: [["https://waveparadigm.itch.io/big-palladium", "itch.io"]]
-	},
-	{
-		title: "Souloist",
-		description: "You and up to four friends can work together as an understaffed band, who have to charge their instruments on stage with soul to keep the music alive! 1-4 players. Fall 2017.",
-		image: "img/games/souloist.png",
-		links: [["https://waveparadigm.itch.io/souloist", "itch.io"]]
-	},
-	{
-		title: "Pause",
-		description: "Pause and Unpause the world! Freeze time to guide an object to the end of 30 levels. Winter 2016.",
-		image: "img/games/pause.png",
-		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://adamgincel.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause16", "Google Play"]]
-	},
-	{
-		title: "We 2 Guys",
-		description: "A sequel to the co-op masocore platformer made by myself and Alex Massenzio (<a href=\"http://alexmassenzio.github.io\">website</a>) for SGDC's Game Jam III. Redone in GameMaker: Studio and designed to be used for Intermediate GMS tutorials, the sequel is coming along very nicely. Summer 2017.",
-		image: "img/games/w2g.png",
-		links: [["", "Unavailable"]]
-	},
-	{
-		title: "Spherical Saunter R/M",
-		description: "Two sequels to Spherical Saunter, a rolling game inspired by Kororinpa. R is very similar to the original -- you roll, jump, and collect coins to reach the coal. M is similar as well, but instead of directly rolling the ball, you tilt the course. Level design and mechanics differ for this. Summer 2017.",
-		image: "img/games/ssr.png",
-		links: [["", "Unavailable"]]
-	},
-	{
-		title: "The Adventures of Bean",
-		description: "A princess seeks treasure in a peaceful forest. Made for SGDC's Game Jam XII. Art, Characters, and Logo by Ari Fiekowsky. April 2017.",
-		image: "img/games/taob.png",
-		links: [["https://waveparadigm.itch.io/the-adventures-of-bean", "itch.io"]]
 	},
 	{
 		title: "Meltdown",

@@ -20,9 +20,29 @@ var blogEntries = [
 	["2017-7-5", "Updated the We 2 Guys gif. Big Palladium is approaching a very playable state, which is exciting. Once that's wrapped up I'm going to go back to work on a playable demo of We 2 Guys, then continue work on Spherical Saunters R and M."],
 	["2017-7-27", "Big Palladium is almost feature complete. Updated its gif in the indicator -- all that's left is some new map designs and some QoL changes."],
 	["2017-9-27", "Big Palladium 0.9.4 is out! All but a few stretch goals have been met and the game is fully playable. It's even seen some great playtime! Souloist was an involved project with midi sequencing, parsing midis to use as beatmaps, and Unity gameplay."],
-	*/["2017-10-12", "Finally purchased and properly set up http://waveparadigm.net!"],
+	["2017-10-12", "Finally purchased and properly set up http://waveparadigm.net!"],
 	["2017-11-29", "Innis Gambit won SGDC's Game Jam 14! I plan on fleshing it out some more so stay tuned."]
+	*/
 ];
+
+let social = [
+	{
+		img: "./img/twitter.png",
+		link: "https://twitter.com/waveparadigm"
+	},
+	{
+		img: "./img/itchio.png",
+		link: "https://waveparadigm.itch.io"
+	},
+	{
+		img: "./img/github.png",
+		link: "https://github.com/waveparadigm"
+	},
+	{
+		img: "./img/youtube.png",
+		link: "https://www.youtube.com/channel/UChEo7pMS9CTI3vCibtoagOA"		
+	}
+]
 
 blogEntries.reverse();
 
@@ -33,6 +53,7 @@ window.onload = function() {
 	
 
 	fillBlog();
+	fillSocial();
 	fillGifIndicator();
 	nextGfy();
 }
@@ -65,6 +86,15 @@ function fillBlog() {
 		htmlString += "<li>\n<div class=\"date\">" + blogEntries[i][0] + "</div> " + blogEntries[i][1] + "\n</li>\n";
 	}
 	blog.innerHTML = htmlString;
+}
+
+function fillSocial() {
+	let s = document.getElementById("social");
+	let htmlString = "";
+	for (let i = 0; i < social.length; i++) {
+		htmlString += "<a href=\"" + social[i].link + "\"><img src=\"" + social[i].img + "\" /></a>";
+	}
+	s.innerHTML = htmlString;
 }
 
 function fillGifIndicator() {
