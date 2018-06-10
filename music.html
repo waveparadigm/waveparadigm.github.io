@@ -62,4 +62,9 @@
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-80139710-3', 'auto'); ga('send', 'pageview'); 
 </script>
 
+<script> 
+if (window.location.protocol != "https:"){ //force https
+    window.location.protocol = "https";
+}
+</script>
 </html>
