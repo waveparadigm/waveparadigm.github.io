@@ -23,6 +23,10 @@ main {
 	font-family: "latolight", sans-serif;
 }
 
+.show {
+	display: inline-block !important;
+}
+
 main h1 {
 	margin-bottom: 0px;
 }
@@ -65,6 +69,24 @@ nav {
 	font-family: "latolight", sans-serif;
 
 	text-align: right;
+}
+
+#navButton {
+	display: none;
+	background-color: #eee;
+	margin-left: 70vw;
+}
+
+#navButton:hover {
+	background-color: #ddd;
+}
+
+#navButton:active {
+	background: #ccc;
+}
+
+#navButton:focus {
+	background: #dcdcdc;
 }
 
 .navHolder {
@@ -199,6 +221,10 @@ main a {
 	font-size: 20px;
 }
 
+#twitter {
+	width: 80vw;
+}
+
 @media only screen and (max-width: 1750px) {
 	nav {
 		width: 75% !important;
@@ -240,13 +266,23 @@ main a {
 }
 
 @media only screen and (max-width: 1165px) {
+
+	#gfy {
+		width: 80vw;
+		height: 45vw;
+	}
+
 	nav {
 		width: 100%;
 		height: auto;
 		text-align: center;
 
-		font-size: 34px;
+		font-size: 20px;
 		padding-bottom: 14px;
+	}
+
+	#navButton {
+		display: inline;
 	}
 
 	nav ul {
@@ -269,7 +305,7 @@ main a {
 
 	.navHolder {
 		width: 100%;
-		display: inline-block;
+		display: none;
 		padding: 0;
 	}
 
@@ -289,13 +325,19 @@ main a {
 		padding-top: 10px;
 	}
 
-	#gfy {
-		width: 75%;
-		height: auto;
-	}
-
 	main ul {
 		width: 85%;
+	}
+
+	main {
+		font-size: 14px;
+	}
+
+	#social img {
+		height: 50px;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 6px;
 	}
 }
 

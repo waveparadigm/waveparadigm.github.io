@@ -6,7 +6,7 @@ var myGfys = [
 	["https://gfycat.com/ifr/SolidValidHawk", "Memory"],
 	["https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", "Tracks"], 
 	["https://gfycat.com/ifr/ImportantTatteredAgama", "Meltdown"], 
-	["https://gfycat.com/ifr/TerrificDopeyFlyingfish", "Pause"],
+	["https://gfycat.com/ifr/GrandWarmheartedBlowfish", "Pause"],
 	["https://gfycat.com/ifr/WetHoarseAnnelid", "Spherical Saunter M"], 
 	["https://gfycat.com/ifr/ElaborateKindlyGoat", "The Adventures of Bean"], 
 	["https://gfycat.com/ifr/DeepEnchantingAnteater", "We 2 Guys"], 
@@ -56,7 +56,7 @@ window.onload = function() {
 	a = Math.floor(Math.random() * (myGfys.length - 1));
 	
 
-	fillBlog();
+	//fillBlog();
 	fillSocial();
 	fillGifIndicator();
 	nextGfy();

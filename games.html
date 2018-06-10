@@ -2,20 +2,24 @@
 <html>
 <head>
 	<title>WaveParadigm</title>
-
+	<meta name="description" content="Information about games made by WaveParadigm." />
 	<link rel="stylesheet" type="text/css" href="public/style.css" />
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script type="text/javascript" src="public/nav.js"></script>
 	<script type="text/javascript" src="public/games.js"></script>
 
 </head>
 <body>
 	<nav>
 		<img class="logo" src="img/logo-banner.png" />
-		<div class="navHolder">
+		<button class="navButton" id="navButton" onclick="toggleNav();">
+			<img src="./img/hamburger-small.png" />
+		</button>
+		<div id="navHolder" class="navHolder">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li class="navSelected"><a href="games.html">[Games]</a></li>

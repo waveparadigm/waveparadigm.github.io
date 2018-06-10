@@ -2,19 +2,22 @@
 <html>
 <head>
 	<title>WaveParadigm</title>
-
+	<meta name="description" content="Information about WaveParadigm and friends." />
 	<link rel="stylesheet" type="text/css" href="public/style.css" />
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lato" type="text/css"/>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+	<script type="text/javascript" src="public/nav.js"></script>
 </head>
 <body>
 	<nav>
 		<img class="logo" src="img/logo-banner.png" />
-		<div class="navHolder">
+		<button class="navButton" id="navButton" onclick="toggleNav();">
+			<img src="./img/hamburger-small.png" />
+		</button>
+		<div id="navHolder" class="navHolder">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="games.html">Games</a></li>
@@ -46,7 +49,7 @@
 		<p><a href="http://kevinquigley.net">Kevin Quigley (HydeGriffen)</a><br />
 		Former President of SGDC and great friend. Kevin's specialties include mobile puzzle games, and mobile puzzle games.</p>
 
-		<p><a href="http://sgdc.ml">Stevens Game Development Club</a><br />
+		<p><a href="http://sgdc.github.io">Stevens Game Development Club</a><br />
 		SGDC is a place for newcomers and veterans alike to test the waters of Game Development. I'm beyond proud to have been running the club for as long as I have been, and am looking forward to its continued success.</p>
 
 	</main>
