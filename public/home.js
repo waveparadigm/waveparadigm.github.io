@@ -1,20 +1,20 @@
 var myGfys = [
-	["https://gfycat.com/ifr/AdventurousInfatuatedGoat", "Spherical Saunter (the original)"],
+	["https://gfycat.com/ifr/AdventurousInfatuatedGoat", "Spherical Saunter"],
 	["https://gfycat.com/ifr/MarvelousSmallDowitcher", "Rig 'er Bigger"], 
 	["https://gfycat.com/ifr/DismalFamiliarAlaskankleekai", "VRange, a VR Target Range POC"], 
 	["https://gfycat.com/ifr/SolidValidHawk", "Memory"],
 	["https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", "Tracks"], 
 	["https://gfycat.com/ifr/ImportantTatteredAgama", "Meltdown"], 
-	["https://gfycat.com/ifr/ImmaculateMaleArizonaalligatorlizard", "ThreeDee"],
+	["https://gfycat.com/ifr/QuarrelsomeConfusedIsopod", "ThreeDee"],
 	["https://gfycat.com/ifr/GrandWarmheartedBlowfish", "Pause"],
 	["https://gfycat.com/ifr/WetHoarseAnnelid", "Spherical Saunter M"], 
 	["https://gfycat.com/ifr/ElaborateKindlyGoat", "The Adventures of Bean"], 
-	["https://gfycat.com/ifr/DeepEnchantingAnteater", "We 2 Guys"], 
 	["https://gfycat.com/ifr/HeartyDesertedBovine", "Big Palladium"], 
 	["https://gfycat.com/ifr/DopeyMellowGoose", "Innis Gambit"],
 	["https://gfycat.com/ifr/JubilantAmusedArabianwildcat", "Arctic Mage Course"],
 	["https://gfycat.com/ifr/ElasticMarriedBarebirdbat", "Thalumus (w/ TehPilot)"],
-];
+	["https://gfycat.com/ifr/TautEarlyArizonaalligatorlizard", "Wind Slime"]
+,];
 
 var blogEntries = [
 	/*["2017-5-9", "Finally got a WaveParadigm website up and running! Development is still in progress, and I have a lot to show. Acquisition of the waveparadigm .com domain is ongoing."],
