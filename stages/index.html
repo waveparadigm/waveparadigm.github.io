@@ -7,7 +7,7 @@
     <h1>Smash Bros Stage Striking</h1>
     <p>Click on a stage to strike it. Click a struck stage to unstrike it. Refresh page to reset. (These are our day-1 lists. Definitely subject to change.)</p>
     <p><a onclick="init('0')" href="#">View Full Stagelist</a> | <a onclick="init('1')" href="#">View Condensed Stagelist</a></p>
-
+    
 
     <div id="starters"></div>
 
@@ -73,17 +73,17 @@
         document.getElementById("starters").innerHTML = "";
         document.getElementById("counterpicks").innerHTML = "";
 
-        let starters = "<h2>Starters</h2>\n" + getInnerHtml(data.starters);
-        let counterpicks = "<h2>Counterpicks</h2>\n" + getInnerHtml(data.counterpicks);
+        let starters = "<h2>Starters</h2>\n" + getInnerHtml(data.starters, 0);
+        let counterpicks = "<h2>Counterpicks</h2>\n" + getInnerHtml(data.counterpicks, data.starters.length);
         
         document.getElementById("starters").innerHTML = starters;
         document.getElementById("counterpicks").innerHTML = counterpicks;
     }
 
-    function getInnerHtml(arr) {
+    function getInnerHtml(arr, offset) {
         let ret = "";
         for (let i = 0; i < arr.length; i++) {
-            let s = "<div class=\"stage\"><img id=\"i" + i.toString() + "\" onclick=\"toggle(" + i.toString() + ")\" ";
+            let s = "<div class=\"stage\"><img id=\"i" + (i + offset).toString() + "\" onmousedown=\"toggle(" + (i + offset).toString() + ")\" ";
             if (arr[i].hazardless) {
                 s += "class=\"hazardless\" ";
             }
@@ -146,10 +146,6 @@
 
         .hazardless {
             width: 35vw;
-        }
-
-        div p {
-            font-size: 11px;
         }
     }
 </style>
