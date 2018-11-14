@@ -1,0 +1,1 @@
+[{"type":"plain","textWait":"2","endScript":"transaction_end","endFile":"-1"},{"name":"Cashier","portraitType":"left","portrait":"-1","text":"Is that everything?"},{"name":"Customer","portraitType":"left","portrait":"-1","text":"Yes,^5 it is."},{"name":"Cashier","portraitType":"left","portrait":"-1","text":"Here's your change.^9 Have a nice day."}]

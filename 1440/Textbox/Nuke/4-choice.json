@@ -1,0 +1,1 @@
+[{"type":"choice","textWait":"2","choices":["Same to you.","The alert said to stay inside. You should stay here."],"choiceFiles":["Textbox/Nuke/4-go.json","Textbox/Nuke/4-stay.json","-1","-1"],"choiceScripts":["-1","-1","-1","-1"]},{"name":"Customer","portraitType":"left","portrait":"-1","text":"Well,^5 there's our answer.^9 I'm going home.^9 You stay safe now."}]
