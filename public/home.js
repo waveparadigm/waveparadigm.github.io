@@ -1,31 +1,58 @@
-var myGfys = [
-	["https://gfycat.com/ifr/AdventurousInfatuatedGoat", "Spherical Saunter"],
-	["https://gfycat.com/ifr/MarvelousSmallDowitcher", "Rig 'er Bigger"], 
-	["https://gfycat.com/ifr/DismalFamiliarAlaskankleekai", "VRange, a VR Target Range POC"], 
-	["https://gfycat.com/ifr/SolidValidHawk", "Memory"],
-	["https://gfycat.com/ifr/ConstantUltimateIchthyosaurs", "Tracks"], 
-	["https://gfycat.com/ifr/ImportantTatteredAgama", "Meltdown"], 
-	["https://gfycat.com/ifr/QuarrelsomeConfusedIsopod", "ThreeDee"],
-	["https://gfycat.com/ifr/GrandWarmheartedBlowfish", "Pause"],
-	["https://gfycat.com/ifr/WetHoarseAnnelid", "Spherical Saunter M"], 
-	["https://gfycat.com/ifr/ElaborateKindlyGoat", "The Adventures of Bean"], 
-	["https://gfycat.com/ifr/HeartyDesertedBovine", "Big Palladium"], 
-	["https://gfycat.com/ifr/DopeyMellowGoose", "Innis Gambit"],
-	["https://gfycat.com/ifr/JubilantAmusedArabianwildcat", "Arctic Mage Course"],
-	["https://gfycat.com/ifr/ElasticMarriedBarebirdbat", "Thalumus (w/ TehPilot)"],
-	["https://gfycat.com/ifr/TautEarlyArizonaalligatorlizard", "Wind Slime"]
-,];
-
-var blogEntries = [
-	/*["2017-5-9", "Finally got a WaveParadigm website up and running! Development is still in progress, and I have a lot to show. Acquisition of the waveparadigm .com domain is ongoing."],
-	["2017-6-20", "Added some more gifs and fixed IE support for the site. Got ahold of the @WaveParadigm Twitter handle, though .com remains illustrious. For now the site is at waveparadigm.tk just to give it a shorter name. Big Palladium is in progress plus level design for Spherical Saunters R/M, Pause, and We 2 Guys. Hoo boy."],
-	["2017-7-5", "Updated the We 2 Guys gif. Big Palladium is approaching a very playable state, which is exciting. Once that's wrapped up I'm going to go back to work on a playable demo of We 2 Guys, then continue work on Spherical Saunters R and M."],
-	["2017-7-27", "Big Palladium is almost feature complete. Updated its gif in the indicator -- all that's left is some new map designs and some QoL changes."],
-	["2017-9-27", "Big Palladium 0.9.4 is out! All but a few stretch goals have been met and the game is fully playable. It's even seen some great playtime! Souloist was an involved project with midi sequencing, parsing midis to use as beatmaps, and Unity gameplay."],
-	["2017-10-12", "Finally purchased and properly set up http://waveparadigm.net!"],
-	["2017-11-29", "Innis Gambit won SGDC's Game Jam 14! I plan on fleshing it out some more so stay tuned."]
-	*/
+let myVideos = [
+	["./videos/memory.webm", "Memory"],
+	["./videos/tracks.webm", "Tracks"],
+	["./videos/meltdown.webm", "Meltdown"],
+	["./videos/pause.webm", "Pause"],
+	["./videos/sphericalsaunterm.webm", "Spherical Saunter M"],
+	["./videos/windslime.webm", "Wind Slime"],
+	["./videos/engineerarena.webm", "Engineer Arena"]
 ];
+
+var games = [
+	{
+		title: "Memory",
+		description: "Live through the memorysort experiment and explore three different platforming mechanics.",
+		image: "img/games/memory.png",
+		links: [["https://waveparadigm.itch.io/memory", "itch.io"]]
+	},
+	{
+		title: "Tracks",
+		description: "Solve moral quandaries in this on-rails experience.",
+		image: "img/games/tracks.png",
+		links: [["https://waveparadigm.itch.io/tracks", "itch.io"], ["http://adamgincel.com/tracks", "Play Online"]]
+	},
+	{
+		title: "Meltdown",
+		description: "Experience the intricacies of Nuclear Reactor operation. Made in conjunction with James Romph (<a href=\"http://tehpilot.com\">website</a>) and Professor Alex Wellerstein, Meltdown aims to teach a realistic story about the events that lead up to nuclear reactor meltdown. Fall 2016.",
+		image: "img/games/meltdown.png",
+		links: [["https://waveparadigm.itch.io/meltdown", "itch.io"]]
+	},
+	{
+		title: "Pause",
+		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces. 2016-2018.",
+		image: "img/games/pause.png",
+		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://adamgincel.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
+	},
+	{
+		title: "Tilt 'em",
+		description: "Inspired by rolling legends before it, tilt the world and possess different objects in this arcade platforming experience!",
+		image: "./img/games/sphericalsaunterm.png",
+		links: [["https://waveparadigm.itch.io/spherical-saunter-m", "itch.io"]]
+	},
+	{
+		title: "Wind Slime",
+		description: "The roaming spirit of a once-great wind mage finds a home in a small, unassuming mountain slime. He tasks himself with climbing to the top of the mountain, harnessing the power of the mountain's mana crystals to use a small fraction of his former magic, manipulating the endless blizzard to guide him up the hazardous slope.",
+		image: "./img/games/windslime.png",
+		links: [["https://waveparadigm.itch.io/wind-slime", "itch.io"]]
+	},
+	{
+		title: "Engineer Arena",
+		description: "A 1-4 player splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.",
+		image: "./img/games/engineerarena.png",
+		links: [["https://twitter.com/EngineerArena", "Twitter"]]
+	}
+];
+
 
 let social = [
 	{
@@ -48,39 +75,40 @@ let social = [
 		img: "./img/youtube.png",
 		link: "https://www.youtube.com/channel/UChEo7pMS9CTI3vCibtoagOA"		
 	}
-]
+];
 
-blogEntries.reverse();
+games.reverse();
 
-var a = -1;
+let a = -1;
+let vid = null;
 
 window.onload = function() {
-	a = Math.floor(Math.random() * (myGfys.length - 1));
+	vid = document.getElementById("vid");
+	a = myVideos.length - 2;
 	
-
-	//fillBlog();
 	fillSocial();
 	fillGifIndicator();
 	nextGfy();
 }
 
 function prevGfy() {
-	var gfy = document.getElementById("gfy");
 	a -= 1;
 	if (a < 0)
-		a = myGfys.length - 1;
-	gfy.src = myGfys[a][0];
+		a = myVideos.length - 1;
+	vid.src = myVideos[a][0];
+	vid.load();
+	vid.play();
 
 	updateIndicators();
 }
 
 function nextGfy() {
-	var gfy = document.getElementById("gfy");
-	a = Math.floor((a + 1) % myGfys.length);
-	chosenGfy = myGfys[a][0];
-	console.log(a);
+	a = Math.floor((a + 1) % myVideos.length);
+	chosenGfy = myVideos[a][0];
 
-	gfy.src = chosenGfy;
+	vid.src = chosenGfy;
+	vid.load();
+	vid.play();
 
 	updateIndicators();
 }
@@ -107,7 +135,7 @@ function fillGifIndicator() {
 	var gifIndicator = document.getElementById("gifIndicator");
 
 	var htmlString = "";
-	for (var i = 0; i < myGfys.length; i++) {
+	for (var i = 0; i < myVideos.length; i++) {
 		htmlString += "<div class=\"indicator";
 
 		if (i == a) {
@@ -121,7 +149,7 @@ function fillGifIndicator() {
 }
 
 function updateIndicators() {
-	for (var i = 0; i < myGfys.length; i++) {
+	for (var i = 0; i < myVideos.length; i++) {
 		var ind = document.getElementById("indicator" + i.toString());
 		ind.classList.remove("active");
 
@@ -129,5 +157,35 @@ function updateIndicators() {
 			ind.classList.add("active");
 	}
 
-	document.getElementById("gifTitle").innerHTML = myGfys[a][1];
+	document.getElementById("gifTitle").innerHTML = myVideos[a][1];
+}
+
+function populateGames() {
+	let s = "";
+	for (let i = 0; i < games.length; i++) {
+		let game = games[i];
+		s += `
+		<article class="game">
+			<div class="imagewrapper">
+				<img src="${game.image}" />
+			</div>
+			<section>
+				<h2>${game.title}</h2>
+				<p>${game.description}</p>
+
+				${formatLinks(game.links)}
+			</section>
+		</article>
+		`
+	}
+	document.getElementById("games").innerHTML = s;
+}
+
+function formatLinks(links) {
+	let s = "";
+	for (let i = 0; i < links.length; i++) {
+		s += `<a href="${links[i][0]}">${links[i][1]}</a>
+		`;
+	}
+	return s;
 }
