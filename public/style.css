@@ -261,7 +261,7 @@ main a {
 		text-align: center;
 		padding: 10px;
 		margin-bottom: 10px;
-		width: 100% !important;
+		width: 92% !important;
 	}
 
 	.imagewrapper {
@@ -293,6 +293,10 @@ main a {
 		padding-bottom: 4px;
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+
+	main p {
+		width: 80%;
 	}
 }
 
