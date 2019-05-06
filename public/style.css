@@ -228,8 +228,13 @@ main a {
 	display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
+	.game {
+		width: 98% !important;
+	}
+}
 
+@media only screen and (max-width: 875px) {
 	video {
 		position: initial;
 	}
