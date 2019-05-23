@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BeetleBot Command Generator</title>
+    </head>
+
+    <style>
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main {
+            width: 75%;
+            text-align: center;
+            margin: auto;
+            outline: 1px solid black;
+            padding: 15px;
+            padding-top: 1px;
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            min-height: 200px;
+            white-space: pre;
+        }
+
+        input {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            main {
+                width: 90%;
+            }
+
+            input {
+                width: 95%;
+            }
+        }
+    </style>
+
+    <body>
+        <main>
+            <h1>BeetleBot Command Generator</h1>
+            <p>
+                Thank you for helping to bugtest Rivals of Aether!
+                Please use this form to help you format commands which you can copy/paste into our Discord server to start tracking your issues!
+
+                Before submitting, check submitted bugs in the server with =bugs and look to see if anything similar has already been reported.
+            </p>
+
+            <section id="new">
+                <label>Title: </label> <br /> <input id="title" type="text" /> <br /><br />
+                <label>Description: </label> <br /> <input id="description" type="text" /> <br /><br />
+                <label>Steps to Reproduce: </label> <br /> <input id="reproduce" type="text" /> <br /><br />
+                <label>Expected Result: </label> <br /> <input id="expected" type="text" /> <br /><br />
+                <label>Actual Result: </label> <br /> <input id="actual" type="text" /> <br /><br />
+                <label>Patch: </label> <br /> <input id="patch" type="text" /> <br /><br />
+                <label>Console: </label> <br /> <input id="console" type="text" /> <br /><br />
+
+                <br />
+
+                <label>Final Command:</label> <br />
+                <button id="copy" onclick="copyCommand()" disabled>Fill out all Fields</button> <br />
+                <textarea rows="8" id="command" readonly></textarea>
+            </section>
+        </main>
+    </body>
+
+    <script>
+        let title = null;
+        let description = null;
+        let reproduce = null;
+        let expected = null;
+        let actual = null;
+        let patch = null;
+        let console = null;
+
+        window.onload = function() {
+            title = get("title");
+            description = get("description");
+            reproduce = get("reproduce");
+            expected = get("expected");
+            actual = get("actual");
+            patch = get("patch");
+            cons = get("console");
+
+            title.oninput = populateCommand;
+            description.oninput = populateCommand;
+            reproduce.oninput = populateCommand;
+            expected.oninput = populateCommand;
+            actual.oninput = populateCommand;
+            patch.oninput = populateCommand;
+            cons.oninput = populateCommand;
+        }
+
+        function get(id) {
+            return document.getElementById(id);
+        }
+
+        function populateCommand() {
+            let textarea = get("command");
+            let s = "=report ";
+            s += title.value + "\n";
+            s += description.value + "\n";
+            s += reproduce.value + "\n";
+            s += expected.value + "\n";
+            s += actual.value + "\n";
+            s += patch.value + "\n";
+            s += cons.value;
+
+            textarea.innerHTML = s;
+
+            let c = get("copy");
+            if ([title.value, description.value, reproduce.value, expected.value, actual.value, patch.value, cons.value].indexOf("") != -1) {
+                c.innerHTML = "Fill out all Fields";
+                c.disabled = true;
+            } else {
+                c.innerHTML = "Copy to Clipboard";
+                c.disabled = false;
+            }
+        } 
+
+        function copyCommand() {
+            let textarea = get("command");
+            textarea.select();
+            document.execCommand("copy");
+            alert("Copied Command to Clipboard.");
+        }
+
+
+    </script>
+</html>
