@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DM CharacterCommand Generator</title>
+    </head>
+
+    <style>
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main {
+            width: 75%;
+            text-align: center;
+            margin: auto;
+            outline: 1px solid black;
+            padding: 15px;
+            padding-top: 1px;
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            min-height: 200px;
+            white-space: pre;
+        }
+
+        input {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 800px) {
+            main {
+                width: 90%;
+            }
+
+            input {
+                width: 95%;
+            }
+        }
+    </style>
+
+    <body>
+        <main>
+            <h1>DM Character Creation Command Generator</h1>
+
+            <section id="new">
+                <label>Level: </label> <br /> <input id="level" type="text" /> <br /><br />
+                <label>HP: </label> <br /> <input id="hp" type="text" /> <br /><br />
+                <label>AC: </label> <br /> <input id="ac" type="text" /> <br /><br />
+                <label>STR: </label> <br /> <input id="str" type="text" /> <br /><br />
+                <label>DEX: </label> <br /> <input id="dex" type="text" /> <br /><br />
+                <label>CON: </label> <br /> <input id="con" type="text" /> <br /><br />
+                <label>INT: </label> <br /> <input id="int" type="text" /> <br /><br />
+                <label>WIS: </label> <br /> <input id="wis" type="text" /> <br /><br />
+                <label>CHA: </label> <br /> <input id="cha" type="text" /> <br /><br />
+                <label>Name: </label> <br /> <input id="name" type="text" /> <br /><br />
+                <br />
+
+                <label>Final Command:</label> <br />
+                <button id="copy" onclick="copyCommand()" disabled>Fill out all Fields</button> <br />
+                <textarea rows="8" id="command" readonly></textarea>
+            </section>
+        </main>
+    </body>
+
+    <script>
+        let name = null;
+        let level = null;
+        let hp = null;
+        let ac = null;
+        let str = null;
+        let dex = null;
+        let con = null;
+        let int = null;
+        let wis = null;
+        let cha = null;
+
+        function getA() {
+            return [level, hp, ac, str, dex, con, int, wis, cha, name];
+        }
+
+        function getAValues() {
+            return [level.value, hp.value, ac.value, str.value, dex.value, con.value, int.value, wis.value, cha.value, name.value];
+        }
+
+        window.onload = function() {
+            name = get("name");
+            level = get("level");
+            hp = get("hp");
+            ac = get("ac");
+            str = get("str");
+            dex = get("dex");
+            con = get("con");
+            int = get("int");
+            wis = get("wis");
+            cha = get("cha");
+            let a = getA();
+
+            for (let i = 0; i < a.length; i++) {
+                a[i].oninput = populateCommand;
+            }
+        }
+
+        function get(id) {
+            return document.getElementById(id);
+        }
+
+        function populateCommand() {
+            let a = getAValues();
+            let textarea = get("command");
+            let s = "=newCharacter ";
+            for (let i = 0; i < a.length; i++) {
+                s += a[i].toString() + " ";
+            }
+
+            textarea.innerHTML = s;
+
+            let c = get("copy");
+            if (a.indexOf("") != -1) {
+                c.innerHTML = "Fill out all Fields";
+                c.disabled = true;
+            } else {
+                c.innerHTML = "Copy to Clipboard";
+                c.disabled = false;
+            }
+        } 
+
+        function copyCommand() {
+            let textarea = get("command");
+            textarea.select();
+            document.execCommand("copy");
+            alert("Copied Command to Clipboard.");
+        }
+    </script>
+</html>
