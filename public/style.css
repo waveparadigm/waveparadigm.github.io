@@ -170,6 +170,22 @@ main a {
 	margin-top: 12px;
 }
 
+.game-solo {
+	width: 90% !important;
+	display: inline-block;
+	background-color: rgba(100, 100, 100, 0.25);
+	color: white;
+	text-align: center;
+	height: auto;
+	font-size: 30px;
+	margin-top: 16px;
+}
+
+.game-solo h1 {
+	padding: 2px;
+	margin: 2px;
+}
+
 .imagewrapper {
 	float: left;
 }
@@ -303,11 +319,19 @@ main a {
 	main p {
 		width: 80%;
 	}
+
+	.game-solo {
+		font-size: 20px;
+	}
 }
 
 @media only screen and (max-width: 490px) {
 	#nav-text a {
 		font-size: 25px;
+	}
+
+	.game-solo {
+		font-size: 14px;
 	}
 }
 
