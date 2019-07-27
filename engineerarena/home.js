@@ -22,6 +22,10 @@ let social = [
 		link: "https://twitter.com/EngineerArena"
 	},
 	{
+		img: "../img/discord.png",
+		link: "https://discord.gg/EqnSwwx"
+	},
+	{
 		img: "../img/youtube.png",
 		link: "https://www.youtube.com/channel/UCRjwrNKpYfv3yy-aOCpDnyg"		
 	},
