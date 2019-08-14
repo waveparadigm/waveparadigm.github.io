@@ -47,9 +47,10 @@ var games = [
 	},
 	{
 		title: "Engineer Arena",
-		description: "A 1-4 player splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.",
+		description: "A frantic local-multiplayer splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.",
 		image: "./img/games/engineerarena.png",
-		links: [["https://twitter.com/EngineerArena", "Twitter"]]
+		links: [["https://store.steampowered.com/app/1118950/Engineer_Arena/", "Steam"], ["https://waveparadigm.itch.io/engineer-arena/", "itch.io"],
+				["https://waveparadigm.dev/engineerarena/", "Site"], ["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.dev/engineerarena/presskit/", "PressKit()"]]
 	}
 ];
 

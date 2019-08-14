@@ -11,11 +11,11 @@ let myVideos = [
 let social = [
 	{
 		img: "../img/steam.png",
-		link: "https://waveparadigm.itch.io"
+		link: "https://store.steampowered.com/app/1118950/Engineer_Arena/"
 	},
 	{
 		img: "../img/itchio.png",
-		link: "https://waveparadigm.itch.io"
+		link: "https://waveparadigm.itch.io/engineer-arena"
 	},
 	{
 		img: "../img/twitter.png",
