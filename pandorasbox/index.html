@@ -2,12 +2,30 @@
 <html>
     <head>
         <title>Pandora's Box - Image to Lua Script</title>
+
+        <style>
+        	td {
+        		outline: 1px solid black;
+        		padding-left: 6px;
+        		padding-right: 6px;
+        	}
+    	</style>
     </head>
 
     <body>
         <main style="width: 80%; text-align: center; margin: auto;">
             <h1>Pandora's Box - Image to Lua Script</h1>
             <p>Welcome to Pandora's Box - upload your image here and click the Process Image button. A Lua Script will be generated to paste into Sprites.lua, which you should receive after downloading Pandora's Box from CC.</p>
+            <p>Here are some Rendered Pixel Values and their approximate performance on a decent machine:
+            	<table style="margin: auto; width: 50%;">
+            		<tr><td>Under 1000</td><td>Should perform great. Can probably have a good number of these.</td></tr>
+            		<tr><td>Under 5000</td><td>Should perform fine, try to only have a few if possible.</td></tr>
+            		<tr><td>Under 7500</td><td>Still performing fine, but might take a sec at startup.</td></tr>
+            		<tr><td>Under 12500</td><td>Officially pushing it slightly. Might see some slight performance impact, especially multiple.</td></tr>
+            		<tr><td>Over 12500</td><td>Use at your own risk. Expect to see the engine slow down considerably.</td></tr>
+            		<tr><td>Over 100000</td><td>I'm pretty sure at some point the engine will literally throw an error on startup. Please stop.</td></tr>
+            	</table>
+            </p>
             <label>Image File:</label>
             <input type="file" id="imageLoader" name="imageLoader"/><br/>
             <canvas id="imageCanvas"></canvas> <br />
