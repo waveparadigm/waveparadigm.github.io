@@ -175,7 +175,7 @@ body {
 		font-size: 20px;
 	}
 
-	video {
+	main video {
 		width: 98%;
 	}
 
@@ -186,6 +186,10 @@ body {
 	main p {
 		width: 95%;
 		font-size: 16px;
+	}
+
+	main a {
+		font-size: 20px;
 	}
 
 	.socialImage {
