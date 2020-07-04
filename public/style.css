@@ -166,6 +166,15 @@ body {
 /* END NAV */
 
 @media only screen and (max-width: 1050px) {
+
+	main h1 {
+		font-size: 32px;
+	}
+
+	main h2 {
+		font-size: 20px;
+	}
+
 	video {
 		width: 98%;
 	}
@@ -176,6 +185,7 @@ body {
 
 	main p {
 		width: 95%;
+		font-size: 16px;
 	}
 
 	.socialImage {
