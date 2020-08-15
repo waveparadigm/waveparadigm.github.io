@@ -97,6 +97,7 @@ body {
 		height: 98vh;
 		float: left;
 		text-align: center;
+		overflow: auto;
 	}
 
 
@@ -149,11 +150,6 @@ body {
 		text-decoration: none;
 	}
 
-	#gamesList {
-		height: 58vh;
-		overflow: auto;
-	}
-
 	#logo {
 		width: 100%;
 		height: auto;
@@ -177,10 +173,6 @@ body {
 
 	main video {
 		width: 98%;
-	}
-
-	#gamesList {
-		height: 70vh;
 	}
 
 	main p {

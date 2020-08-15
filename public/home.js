@@ -104,7 +104,7 @@ function populateGames() {
 		s += `<a href="#${game.shortname}" onclick="setGame('${game.shortname}')"><li>${game.title}</li></a>
 		`;
 	}
-	document.getElementById("gamesOL").innerHTML = s;
+	document.getElementById("gamesList").innerHTML = s;
 }
 
 function formatLinks(links) {
