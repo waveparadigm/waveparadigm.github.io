@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Core CSV Analytics Viewer</title>
+    </head>
+
+    <body>
+        <label>Paste the contents of the CSV file here, then click Process:</label><br />
+        <textarea id="input"></textarea>
+        <button onclick="process()">Process</button><br /><br />
+
+        <div id="data" style="display: none;"">
+            <h1 id="gameName">Game Name</h1><br />
+            <button onclick="previous()"> Previous </button>
+            <button onclick="next()"> Next </button><br /><br />
+
+            <h1 id="dateName">10/31/2020</h1><br />
+            <button onclick="previousDate()"> Tomorrow </button>
+            <button onclick="nextDate()"> Yesterday </button><br /><br />
+
+            <div id="values">
+                <label>Daily Active Users: </label><label id="dau">0</label><br />
+                <label>DAU Average Month to Date: </label><label id="dauAverage">0</label><br />
+                <label>Retention d1 Month to Date Percentage: </label><label id="d1MtdPercent"></label><br />
+                <label>0 - 4.99%: 3x | 5 - 9.99%: 4x | 10 - 19.99%: 6x | >=20%: 12x</label><br /><br />
+
+
+                <label>Sessions: </label><label id="sessions">0</label><br />
+                <label>Session Time (Minutes): </label><label id="sessionTime">0</label><br />
+                <label>Players d0: </label><label id="d0">0</label><br />
+                <label>Players d1: </label><label id="d1">0</label><br />
+                <label>Players d2: </label><label id="d2">0</label><br />
+                <label>Players d3: </label><label id="d3">0</label><br />
+                <label>Players d5: </label><label id="d5">0</label><br />
+                <label>Players d7: </label><label id="d7">0</label><br />
+                
+                <label>Retention d1 Percent: </label><label id="d1Percent">0</label><br />
+                <label>Players d0 Month to Date: </label><label id="d0Mtd">0</label><br />       
+                <label>Players d1 Month to Date: </label><label id="d1Mtd">0</label><br />
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let gameData = {};
+        let selectedIndex = 0;
+        let selectedDateIndex = 0;
+
+        const input = document.getElementById("input");
+        const gameName = document.getElementById("gameName");
+        const dateName = document.getElementById("dateName");
+
+        const dataDiv = document.getElementById("data");
+
+        const dau = document.getElementById("dau");
+        const sessions = document.getElementById("sessions");
+        const sessionTime = document.getElementById("sessionTime");
+        const d0 = document.getElementById("d0");
+        const d1 = document.getElementById("d1");
+        const d2 = document.getElementById("d2");
+        const d3 = document.getElementById("d3");
+        const d5 = document.getElementById("d5");
+        const d7 = document.getElementById("d7");
+        const dauAverage = document.getElementById("dauAverage");
+        const d1Percent = document.getElementById("d1Percent");
+        const d0Mtd = document.getElementById("d0Mtd");
+        const d1Mtd = document.getElementById("d1Mtd");
+        const d1MtdPercent = document.getElementById("d1MtdPercent");
+        
+        function process() {
+            gameData = {};
+            selectedIndex = 0;
+            selectedDateIndex = 0;
+            let s = input.value;
+            let rows = s.split("\n");
+            
+            for (let i = 1; i < rows.length; i++) {
+                let r = rows[i].split(",");
+                //account_id,user_name,game_id,game_name,date,dau,sessions,session_time_minutes,players_d0,players_d1,players_d2,players_d3,players_d5,players_d7,dau_average_month_to_date,retention_d1_percent,players_d0_month_to_date,players_d1_month_to_date,retention_d1_month_to_date_percent
+                let name = r[3];
+                if (!gameData[name]) {
+                    gameData[name] = [];
+                }
+                gameData[name].push({
+                    date: r[4],
+                    dau: r[5],
+                    sessions: r[6],
+                    sessionTimeMinutes: r[7],
+                    d0: r[8],
+                    d1: r[9],
+                    d2: r[10],
+                    d3: r[11],
+                    d5: r[12],
+                    d7: r[13],
+                    dauAverage: r[14],
+                    d1Percent: r[15],
+                    d0Mtd: r[16],
+                    d1Mtd: r[17],
+                    d1MtdPercent: r[18]
+                });
+            }
+
+            // now, reverse all game lists
+            for (let k in gameData) {
+                gameData[k] = gameData[k].reverse();
+            }
+            displayGame();
+        }
+
+        function displayGame() {
+            const keys = Object.keys(gameData);
+            const gameArray = gameData[keys[selectedIndex]];
+            const row = gameArray[selectedDateIndex];
+
+            if (row) {
+                gameName.innerHTML = keys[selectedIndex];
+                dateName.innerHTML = row.date;
+                dau.innerHTML = row.dau;
+                sessions.innerHTML = row.sessions;
+                sessionTime.innerHTML = row.sessionTimeMinutes;
+                d0.innerHTML = row.d0;
+                d1.innerHTML = row.d1;
+                d2.innerHTML = row.d2;
+                d3.innerHTML = row.d3;
+                d5.innerHTML = row.d5;
+                d7.innerHTML = row.d7;
+                dauAverage.innerHTML = row.dauAverage;
+                d1Percent.innerHTML = row.d1Percent;
+                d0Mtd.innerHTML = row.d0Mtd;
+                d1Mtd.innerHTML = row.d1Mtd;
+                d1MtdPercent.innerHTML = row.d1MtdPercent;
+                dataDiv.style.display = "Block";
+            }
+        }
+
+        function previous() {
+            selectedIndex--;
+            if (selectedIndex < 0) {
+                selectedIndex = Object.keys(gameData).length - 1;
+            }
+            selectedDateIndex = 0;
+            displayGame();
+        }
+
+        function next() {
+            selectedIndex++;
+            if (selectedIndex >= Object.keys(gameData).length) {
+                selectedIndex = 0;
+            }
+            selectedDateIndex = 0;
+            displayGame();
+        }
+
+        function previousDate() {
+            selectedDateIndex--;
+            if (selectedDateIndex < 0) {
+                selectedDateIndex = gameData[Object.keys(gameData)[selectedIndex]].length - 1;
+            }
+            displayGame();
+        }
+
+        function nextDate() {
+            selectedDateIndex++;
+            if (selectedDateIndex >= gameData[Object.keys(gameData)[selectedIndex]].length) {
+                selectedDateIndex = 0;
+            }
+            displayGame();
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #data {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #values {
+            text-align: left;
+            width: 40%;
+            margin: auto;
+        }
+        h1 {
+            display: inline;
+        }
+    </style>
+</html>
