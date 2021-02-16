@@ -57,6 +57,14 @@ let games = [
 				["https://waveparadigm.com/engineerarena/", "Site"], ["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.com/engineerarena/presskit/", "PressKit()"]]
 	},
 	{
+		title: "Roll 'em",
+		shortname: "rollem",
+		date: "2020 - Present",
+		video: "./videos/rollem.webm",
+		description: "My first big game on Core! Up to 16 players race marbles through dozens of courses in real time - compete worldwide for speedrun leaderboard times, earn gems and show off fancy marble skins, hats, and trails!",
+		links: [["https://www.coregames.com/games/b4b9db/roll-em", "Play on CoreGames"]]
+	},
+	{
 		title: "Slime 64",
 		shortname: "slime64",
 		date: "2019 - Present",
