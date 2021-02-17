@@ -13,7 +13,7 @@ let games = [
 		date: "Fall 2016",
 		video: "./videos/tracks.webm",
 		description: "Solve moral quandaries in this on-rails experience.<br /><br />Tracks was built in GameMaker: Studio and saw a surprising surge in online plays after its release - around 5000 or so!",
-		links: [["https://waveparadigm.itch.io/tracks", "itch.io"], ["http://adamgincel.com/tracks", "Play Online"]]
+		links: [["https://waveparadigm.itch.io/tracks", "itch.io"], ["http://waveparadigm.com/tracks", "Play Online"]]
 	},
 	{
 		title: "Meltdown",
@@ -29,7 +29,7 @@ let games = [
 		date: "2016 - 2018",
 		video: "./videos/pause.webm",
 		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces.<br /><br />Pause first saw life as a First Person Puzzle game, but eventually translated to a one-tap mobile experience. It's been put on the backburner for now, but I hope to one day return to finish it!",
-		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://adamgincel.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
+		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://waveparadigm.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
 	},
 	{
 		title: "Tilt 'em",
