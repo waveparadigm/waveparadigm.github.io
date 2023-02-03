@@ -69,8 +69,8 @@ let games = [
 		shortname: "slime64",
 		date: "2019 - Present",
 		video: "./videos/slime64.webm",
-		description: "A 3D collectathon platformer inspired by 64-bit classics. Journey around the world as members of the four Slime societies: Earth, Air, Water, and Fire. Help them come together to save their world, while collecting everything they possibly can along the way.<br /><br />Slime 64 is still in active development (with a team of, at one point, 12 people!), and is on pace to be the most expansive project I've ever worked on. I'm really excited for its continued progress - follow us on Twitter!",
-		links: [["https://twitter.com/Slime_64", "Twitter"]]
+		description: "A 3D collectathon platformer inspired by retro classics. Journey around the world as members of the four Slime societies: Earth, Air, Water, and Fire. Help them come together to save their world, while collecting everything they possibly can along the way.",
+		links: [["https://twitter.com/Slime_64", "Twitter"], ["https://slime64.com", "Steam"]]
 	}
 ];
 
