@@ -1,0 +1,63 @@
+---
+permalink: /404.html
+---
+
+<!doctype html>
+<html>
+	<head>
+	<title>WaveParadigm</title>
+    <script src="/public/home.js"></script>
+    <script src="/public/redirects.js"></script>
+	<script>
+	window.onload = function () {
+		try {
+			var isNavbar = false;
+			var isRedirect = false;
+			var redirectLink = "";
+			var s = window.location.href;
+			var hash = s.substring(s.lastIndexOf('/') + 1, s.length).toLowerCase();
+
+			var redirects = getRedirects();
+			for(var i = 0; i < redirects.length; i++) {
+				if (hash === redirects[i].name) {
+					isRedirect = true;
+					redirectLink = redirects[i].link;
+				}
+			}
+
+			if (isRedirect) {
+				window.location = redirectLink;
+			}
+			else {
+				var games = getGames();
+				for(var i = 0; i < games.length; i++) {
+					if (hash === games[i].shortname.toLowerCase()) {
+						isNavbar = true;
+					}
+				}
+
+				if (!isNavbar && hash != "redirects")
+					hash = "404";
+				
+				if (hash != "redirects") {
+					var newLocation = "https://waveparadigm.com/#" + hash;
+					window.location = newLocation;
+				} else { //if /redirects, display all redirects on page
+					var allRedirects = "<h1>Website Redirects</h1>";
+					for (var i = 0; i < redirects.length; i++) {
+						allRedirects += "/" + redirects[i].name;
+						allRedirects += ": <a href=\"" + redirects[i].link + "\">" + redirects[i].link + "</a><br /><br />";
+					}
+					document.body.innerHTML = allRedirects;
+				}
+			}
+		} catch (e) {
+			window.location = "https://waveparadigm.com/";
+		}
+	}
+	</script>
+	</head>
+	<body style="font-size: 14px; font-family: monospace;">
+		Redirecting...
+	</body>
+</html>

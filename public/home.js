@@ -75,6 +75,9 @@ let games = [
 ];
 
 games.reverse();
+function getGames() {
+	return games;
+}
 
 let a = -1;
 let vid = null;
