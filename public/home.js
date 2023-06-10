@@ -70,7 +70,7 @@ let games = [
 		date: "2019 - Present",
 		video: "./videos/slime64.webm",
 		description: "A 3D collectathon platformer inspired by retro classics. Journey around the world as members of the four Slime societies: Earth, Air, Water, and Fire. Help them come together to save their world, while collecting everything they possibly can along the way.",
-		links: [["https://twitter.com/Slime_64", "Twitter"], ["https://slime64.com", "Steam"]]
+		links: [["https://twitter.com/Slime_64", "Twitter"], ["https://slime64.com", "Steam"], ["https://waveparadigm.com/slime64-discord", "Discord"]]
 	}
 ];
 
@@ -83,6 +83,8 @@ window.onload = function() {
 	vid = document.getElementById("vid");
 	if (window.location.hash) {
 		this.setGame(window.location.hash.substr(1));
+	} else {
+		this.setGame("slime64");
 	}
 }
 
