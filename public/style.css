@@ -187,4 +187,11 @@ body {
 	.socialImage {
 		width: 28%;
 	}
+
+	main ul li {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+	}
 }
