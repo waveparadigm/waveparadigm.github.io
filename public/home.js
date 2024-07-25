@@ -1,18 +1,10 @@
 let games = [
 	{
-		title: "Memory",
-		shortname: "memory",
-		date: "Spring 2016",
-		video: "./videos/memory.webm",
-		description: "Live through the memorysort experiment and explore three different platforming mechanics.<br /><br />This First Person Puzzle/Platforming game was the culmination and combination of three different earlier projects of mine - Ethereal Escape, Impulse, and Pause - and combined their mechanics in fun and interesting ways. It was the winner of the Stevens Game Development Club's \"Game Jam VII\"!",
-		links: [["https://waveparadigm.itch.io/memory", "itch.io"]]
-	},
-	{
 		title: "Tracks",
 		shortname: "tracks",
 		date: "Fall 2016",
 		video: "./videos/tracks.webm",
-		description: "Solve moral quandaries in this on-rails experience.<br /><br />Tracks was built in GameMaker: Studio and saw a surprising surge in online plays after its release - around 5000 or so!",
+		description: "Solve moral quandaries in this on-rails experience.",
 		links: [["https://waveparadigm.itch.io/tracks", "itch.io"], ["http://waveparadigm.com/tracks", "Play Online"]]
 	},
 	{
@@ -20,24 +12,8 @@ let games = [
 		shortname: "meltdown",
 		date: "Spring 2017",
 		video: "./videos/meltdown.webm",
-		description: "Experience the intricacies of Nuclear Reactor operation. Made in conjunction with James Romph (<a href=\"http://pilot.dev\">website</a>) and Professor Alex Wellerstein, Meltdown aims to teach a realistic story about the events that lead up to nuclear reactor meltdown.",
+		description: "Experience the intricacies of Nuclear Reactor operation. Made in conjunction with <a href=\"http://pilot.dev\">Pilot</a> and Professor Alex Wellerstein, Meltdown aims to teach a realistic story about the events that lead up to nuclear reactor meltdown.",
 		links: [["https://waveparadigm.itch.io/meltdown", "itch.io"]]
-	},
-	{
-		title: "Pause",
-		shortname: "pause",
-		date: "2016 - 2018",
-		video: "./videos/pause.webm",
-		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces.<br /><br />Pause first saw life as a First Person Puzzle game, but eventually translated to a one-tap mobile experience. It's been put on the backburner for now, but I hope to one day return to finish it!",
-		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://waveparadigm.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
-	},
-	{
-		title: "Tilt 'em",
-		shortname: "tiltem",
-		date: "2017 - 2019",
-		video: "./videos/sphericalsaunterm.webm",
-		description: "Inspired by rolling legends before it, tilt the world and possess different objects in this arcade platforming experience!<br /><br />Tilt 'em first saw life as \"Spherical Saunter R\", a complete rebuild and enhancement of the original Spherical Saunter. Once I learned how create that stage tilt effect, I branched the project off into \"Spherical Saunter M\". Finally, once possessing many objects was added as a mechanic, the game was re-branded to \"Tilt 'em\". Unfortunately, it is another project which has been placed on the backburner in favor of newer endeavors.",
-		links: [["https://waveparadigm.itch.io/spherical-saunter-m", "itch.io"]]
 	},
 	{
 		title: "Wind Slime",
@@ -48,20 +24,68 @@ let games = [
 		links: [["https://waveparadigm.itch.io/wind-slime", "itch.io"]]
 	},
 	{
+		title: "Pause",
+		shortname: "pause",
+		date: "2016 - 2018",
+		video: "./videos/pause.webm",
+		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces.<br /><br />Pause first saw life as a First Person Puzzle game, but eventually translated to a one-tap mobile experience. It's been put on the backburner for now, but I hope to one day return to finish it!",
+		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://waveparadigm.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
+	},
+	{
 		title: "Engineer Arena",
 		shortname: "engineerarena",
 		date: "2018 - 2019",
 		video: "./videos/engineerarena.webm",
 		description: "A frantic local-multiplayer splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.<br /><br />Engineer Arena was built with a team of 7 people over a year of development time, and was the first game I released on Steam!",
 		links: [["https://store.steampowered.com/app/1118950/Engineer_Arena/", "Steam"], ["https://waveparadigm.itch.io/engineer-arena/", "itch.io"],
-				["https://waveparadigm.com/engineerarena/", "Site"], ["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.com/engineerarena/presskit/", "PressKit()"]]
+				["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.com/engineerarena/presskit/", "PressKit()"]]
+	},
+	{
+		title: "Get That Bread",
+		shortname: "getthatbread",
+		date: "Summer 2022",
+		video: "./videos/getthatbread.webm",
+		description: "A board game RPG about a park goose in search of some delicious bread.",
+		links: [["https://waveparadigm.itch.io/get-that-bread", "itch.io"]]
+	},
+	{
+		title: "Mr. Puffle's Day Out",
+		shortname: "puffle",
+		date: "Summer 2023",
+		video: "./videos/puffle.webm",
+		description: "After a million dog years of rain (but who's counting?), the sun finally shines on a local neighborhood. One local dog, Mr. Puffles, takes his owner for walkies.",
+		links: [["https://alexmassenzio.itch.io/mr-puffles-day-out", "itch.io"]]
+	},
+	{
+		title: "Pizza Time",
+		shortname: "pizzatime",
+		date: "Summer 2020",
+		video: "./videos/pizzatime.webm",
+		description: "An online competitive cooking game - compete to fill orders the fastest! Shred cheese, slice pepperoni, pour sauce, and bake as you rush to fill the orders of your endlessly hungry patrons! The team with the most money at the end of the round wins!",
+		links: [["https://www.coregames.com/games/ea2128/pizza-time", "Play on CoreGames"]]
+	},
+	{
+		title: "Sand Surfer",
+		shortname: "sandsurfer",
+		date: "Winter 2020",
+		video: "./videos/sandsurfer.webm",
+		description: "Drift through the sands of a large desert, racing against up to 10 online players, avoiding tornadoes and using powerups to collect shining beacons and win the round!",
+		links: [["https://www.coregames.com/games/457f9d/sand-surfer", "Play on CoreGames"]]
+	},
+	{
+		title: "Infinity Arena",
+		shortname: "infinityarena",
+		date: "Spring 2021",
+		video: "./videos/infinityarena.webm",
+		description: "Winner of the Core Invitational Game Jam's 'Best Shooter' category - Infinity Arena is an online sci-fi FPS featuring over 80 combinations of FFA and team-based modes across a variety of maps, inspired by classic sci-fi shooters!",
+		links: [["https://www.coregames.com/games/c565ef/infinity-arena", "Play on CoreGames"]]
 	},
 	{
 		title: "Roll 'em",
 		shortname: "rollem",
-		date: "2020 - Present",
+		date: "2020 - 2022",
 		video: "./videos/rollem.webm",
-		description: "My first big game on Core! Up to 16 players race marbles through dozens of courses in real time - compete worldwide for speedrun leaderboard times, earn gems and show off fancy marble skins, hats, and trails!",
+		description: "Race marbles through dozens of courses in up to 16-player real time online multiplayer - compete worldwide for speedrun leaderboard times, earn gems and show off fancy marble skins, hats, and trails!",
 		links: [["https://www.coregames.com/games/b4b9db/roll-em", "Play on CoreGames"]]
 	},
 	{

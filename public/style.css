@@ -135,14 +135,14 @@ body {
 
 	nav ol li {
 		margin-bottom: 10px;
-		font-weight: lighter;
+		font-weight: normal;
 		border: 1px lightgray solid;
 		padding-top: 4px;
 		padding-bottom: 4px;
 		border-radius: 4px;
-		margin-left: 3px;
-		margin-right: 3px;
-		background-color: rgba(100, 100, 100, 0.2);
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: rgba(75, 75, 75, 0.7);
 	}
 
 	nav ol a {
@@ -151,12 +151,12 @@ body {
 	}
 
 	#logo {
-		width: 100%;
+		width: 85%;
 		height: auto;
 	}
 
 	.socialImage {
-		width: 17%;
+		width: 13%;
 		height: auto;
 	}
 /* END NAV */
@@ -186,6 +186,11 @@ body {
 
 	.socialImage {
 		width: 28%;
+	}
+
+	#logo {
+		width: 100%;
+		height: auto;
 	}
 
 	main ul li {
