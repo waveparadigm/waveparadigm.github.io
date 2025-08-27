@@ -93,8 +93,8 @@ let games = [
 		shortname: "slime64",
 		date: "2019 - Present",
 		video: "./videos/slime64.webm",
-		description: "A 3D collectathon platformer inspired by retro classics. Journey around the world as members of the four Slime societies: Earth, Air, Water, and Fire. Help them come together to save their world, while collecting everything they possibly can along the way.",
-		links: [["https://twitter.com/Slime_64", "Twitter"], ["https://slime64.com", "Steam"], ["https://waveparadigm.com/slime64-discord", "Discord"]]
+		description: "A 3D collect-a-thon platformer inspired by retro classics! Play as elemental Slimes and collect assorted Bells & Whistles to help these unlikely heroes explore 8 worlds, combine their abilities, and dismantle the evil Wurltson's robotic enterprise.",
+		links: [["https://slime64.com", "Steam"], ["https://twitter.com/Slime_64", "Twitter"], ["https://waveparadigm.com/slime64-discord", "Discord"], ["https://drive.google.com/drive/folders/1MfN63p2u6OLHlMg87C4jUbiVd3N3At4m", "Presskit"]]
 	}
 ];
 
