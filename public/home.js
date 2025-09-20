@@ -49,7 +49,7 @@ let games = [
 		links: [["https://waveparadigm.itch.io/get-that-bread", "itch.io"]]
 	},
 	{
-		title: "Mr. Puffle's Day Out",
+		title: "Mr. Puffle",
 		shortname: "puffle",
 		date: "Summer 2023",
 		video: "./videos/puffle.webm",
