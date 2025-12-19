@@ -75,6 +75,7 @@ let games = [
 	},
 	{
 		title: "All Hail Big Marble",
+		abbreviated: "A. H. Big Marble",
 		shortname: "all-hail-big-marble",
 		date: "2025",
 		video: "./videos/ahbm.webm",
