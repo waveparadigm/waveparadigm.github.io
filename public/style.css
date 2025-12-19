@@ -150,6 +150,14 @@ body {
 		text-decoration: none;
 	}
 
+	.fullName {
+		display: block;
+	}
+
+	.abbreviated {
+		display: none;
+	}
+
 	#logo {
 		width: 85%;
 		height: auto;
@@ -194,7 +202,7 @@ body {
 	}
 
 	nav ol li {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	main ul li {
@@ -202,5 +210,13 @@ body {
 		text-align: center;
 		width: 100%;
 		margin: 0;
+	}
+
+	.fullName {
+		display: none;
+	}
+
+	.abbreviated {
+		display: block;
 	}
 }

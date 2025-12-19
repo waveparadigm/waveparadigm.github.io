@@ -5,7 +5,7 @@ let games = [
 		date: "Fall 2016",
 		video: "./videos/tracks.webm",
 		description: "Solve moral quandaries in this on-rails experience.",
-		links: [["https://waveparadigm.itch.io/tracks", "itch.io"], ["http://waveparadigm.com/tracks", "Play Online"]]
+		links: [["https://waveparadigm.itch.io/tracks", "Play on itch.io"], ["https://waveparadigm.com/tracks", "Play Online"]]
 	},
 	{
 		title: "Meltdown",
@@ -13,48 +13,7 @@ let games = [
 		date: "Spring 2017",
 		video: "./videos/meltdown.webm",
 		description: "Experience the intricacies of Nuclear Reactor operation. Made in conjunction with <a href=\"http://pilot.dev\">Pilot</a> and Professor Alex Wellerstein, Meltdown aims to teach a realistic story about the events that lead up to nuclear reactor meltdown.",
-		links: [["https://waveparadigm.itch.io/meltdown", "itch.io"]]
-	},
-	{
-		title: "Wind Slime",
-		shortname: "windslime",
-		date: "Fall 2018",
-		video: "./videos/windslime.webm",
-		description: "The roaming spirit of a once-great wind mage finds a home in a small, unassuming mountain slime. He tasks himself with climbing to the top of the mountain, harnessing the power of the mountain's mana crystals to use a small fraction of his former magic, manipulating the endless blizzard to guide him up the hazardous slope.<br/ ><br />Wind Slime was created for the 2018 Kenney Game Jam, and was a top contender!",
-		links: [["https://waveparadigm.itch.io/wind-slime", "itch.io"]]
-	},
-	{
-		title: "Pause",
-		shortname: "pause",
-		date: "2016 - 2018",
-		video: "./videos/pause.webm",
-		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces.<br /><br />Pause first saw life as a First Person Puzzle game, but eventually translated to a one-tap mobile experience. It's been put on the backburner for now, but I hope to one day return to finish it!",
-		links: [["https://waveparadigm.itch.io/pause", "itch.io"], ["http://waveparadigm.com/pause", "Play Online"], ["https://play.google.com/apps/testing/com.WaveParadigm.Pause17", "Google Play"]]
-	},
-	{
-		title: "Engineer Arena",
-		shortname: "engineerarena",
-		date: "2018 - 2019",
-		video: "./videos/engineerarena.webm",
-		description: "A frantic local-multiplayer splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.<br /><br />Engineer Arena was built with a team of 7 people over a year of development time, and was the first game I released on Steam!",
-		links: [["https://store.steampowered.com/app/1118950/Engineer_Arena/", "Steam"], ["https://waveparadigm.itch.io/engineer-arena/", "itch.io"],
-				["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.com/engineerarena/presskit/", "PressKit()"]]
-	},
-	{
-		title: "Get That Bread",
-		shortname: "getthatbread",
-		date: "Summer 2022",
-		video: "./videos/getthatbread.webm",
-		description: "A board game RPG about a park goose in search of some delicious bread.",
-		links: [["https://waveparadigm.itch.io/get-that-bread", "itch.io"]]
-	},
-	{
-		title: "Mr. Puffle",
-		shortname: "puffle",
-		date: "Summer 2023",
-		video: "./videos/puffle.webm",
-		description: "After a million dog years of rain (but who's counting?), the sun finally shines on a local neighborhood. One local dog, Mr. Puffles, takes his owner for walkies.",
-		links: [["https://alexmassenzio.itch.io/mr-puffles-day-out", "itch.io"]]
+		links: [["https://waveparadigm.itch.io/meltdown", "Play on itch.io"]]
 	},
 	{
 		title: "Pizza Time",
@@ -65,12 +24,46 @@ let games = [
 		links: [["https://www.coregames.com/games/ea2128/pizza-time", "Play on CoreGames"]]
 	},
 	{
-		title: "Sand Surfer",
-		shortname: "sandsurfer",
-		date: "Winter 2020",
-		video: "./videos/sandsurfer.webm",
-		description: "Drift through the sands of a large desert, racing against up to 10 online players, avoiding tornadoes and using powerups to collect shining beacons and win the round!",
-		links: [["https://www.coregames.com/games/457f9d/sand-surfer", "Play on CoreGames"]]
+		title: "Wind Slime",
+		shortname: "windslime",
+		date: "Fall 2018",
+		video: "./videos/windslime.webm",
+		description: "The roaming spirit of a once-great wind mage finds a home in a small, unassuming mountain slime. He tasks himself with climbing to the top of the mountain, harnessing the power of the mountain's mana crystals to use a small fraction of his former magic, manipulating the endless blizzard to guide him up the hazardous slope.<br/ ><br />Wind Slime was created for the 2018 Kenney Game Jam, and was a top contender!",
+		links: [["https://waveparadigm.itch.io/wind-slime", "Play on itch.io"]]
+	},
+	{
+		title: "Pause",
+		shortname: "pause",
+		date: "2016 - 2018",
+		video: "./videos/pause.webm",
+		description: "Pause and Unpause the world! Freeze time to guide object(s) to the end of levels with many moving pieces.<br /><br />Pause first saw life as a First Person Puzzle game, but eventually translated to a one-tap mobile experience. It's been put on the backburner for now, but I hope to one day return to finish it!",
+		links: [["https://waveparadigm.itch.io/pause", "Play on itch.io"], ["http://waveparadigm.com/pause", "Play Online"]]
+	},
+	{
+		title: "Engineer Arena",
+		shortname: "engineerarena",
+		date: "2018 - 2019",
+		video: "./videos/engineerarena.webm",
+		description: "A frantic local-multiplayer splitscreen FPS where you upgrade on the fly! Take on your friends in the arena and come out on top.<br /><br />Engineer Arena was built with a team of 7 people over a year of development time, and was the first game I released on Steam!",
+		links: [["https://store.steampowered.com/app/1118950/Engineer_Arena/", "Play on Steam"], ["https://waveparadigm.itch.io/engineer-arena/", "Play on itch.io"],
+				["https://twitter.com/EngineerArena", "Twitter"], ["https://waveparadigm.com/engineerarena/presskit/", "PressKit()"]]
+	},
+	{
+		title: "Get That Bread",
+		shortname: "getthatbread",
+		date: "Summer 2022",
+		video: "./videos/getthatbread.webm",
+		description: "A board game RPG about a park goose in search of some delicious bread.",
+		links: [["https://waveparadigm.itch.io/get-that-bread", "Play on itch.io"]]
+	},
+	{
+		title: "Mr. Puffle's Day Out",
+		abbreviated: "Mr. Puffle",
+		shortname: "puffle",
+		date: "Summer 2023",
+		video: "./videos/puffle.webm",
+		description: "After a million dog years of rain (but who's counting?), the sun finally shines on a local neighborhood. One local dog, Mr. Puffles, takes his owner for walkies.",
+		links: [["https://alexmassenzio.itch.io/mr-puffles-day-out", "Play on itch.io"]]
 	},
 	{
 		title: "Infinity Arena",
@@ -81,6 +74,14 @@ let games = [
 		links: [["https://www.coregames.com/games/c565ef/infinity-arena", "Play on CoreGames"]]
 	},
 	{
+		title: "All Hail Big Marble",
+		shortname: "all-hail-big-marble",
+		date: "2025",
+		video: "./videos/ahbm.webm",
+		description: "Collect offerings, unlock new abilities, and ascend.",
+		links: [["https://sbox.game/waveparadigm/ahbm", "Play on s&box"]]
+	},
+	{
 		title: "Roll 'em",
 		shortname: "rollem",
 		date: "2020 - 2022",
@@ -89,10 +90,27 @@ let games = [
 		links: [["https://www.coregames.com/games/b4b9db/roll-em", "Play on CoreGames"]]
 	},
 	{
+		title: "Marble Racer",
+		shortname: "marble-racer",
+		date: "2024 - 2025",
+		video: "./videos/marble-racer.mp4",
+		description: "Race to the finish - it's a marble rolling free-for-all! <br />Compete to be the first marble to reach the end of various courses. Bounce, shove, and roll your way to high scores through frantic competition. Rounds are short and snappy, so even if you're down: you're not out!<br /><br />Marble Racer was originally made over the course of one month for the second s&box game jam, where it won 4th place out of over 100 entrants!",
+		links: [["https://sbox.game/waveparadigm/marble_racer", "Play on s&box"]]
+	},
+	{
+		title: "Within a Marbelous Maze",
+		abbreviated: "Marbelous Maze",
+		shortname: "marbelous-maze",
+		date: "Metroidvania Month Jam #30 - November 2025",
+		video: "./videos/marbelous.webm",
+		description: "You are dropped into a mysterious maze. Obtain marbles with different abilities and swap between them to ascend to freedom.<br />Estimated playtime: 1 - 1.5hrs.<br /><br />Made in 1 month for #MetroidvaniaMonthJam 30!",
+		links: [["https://waveparadigm.itch.io/within-a-marbelous-maze", "Play on itch.io"]]
+	},
+	{
 		title: "Slime 64",
 		shortname: "slime64",
 		date: "2019 - Present",
-		video: "./videos/slime64-new.mp4",
+		video: "./videos/slime64-new.webm",
 		description: "A 3D collect-a-thon platformer inspired by retro classics! Play as elemental Slimes and collect assorted Bells & Whistles to help these unlikely heroes explore 8 worlds, combine their abilities, and dismantle the evil Wurltson's robotic enterprise.",
 		links: [["https://slime64.com", "Steam"], ["https://twitter.com/Slime_64", "Twitter"], ["https://waveparadigm.com/slime64-discord", "Discord"], ["https://drive.google.com/drive/folders/1MfN63p2u6OLHlMg87C4jUbiVd3N3At4m", "Presskit"]]
 	}
@@ -138,7 +156,9 @@ function populateGames() {
 	let s = "";
 	for (let i = 0; i < games.length; i++) {
 		let game = games[i];
-		s += `<a href="#${game.shortname}" onclick="setGame('${game.shortname}')"><li>${game.title}</li></a>
+		s += `<a href="#${game.shortname}" onclick="setGame('${game.shortname}')">
+			  	<li><span class="fullName">${game.title}</span><span class="abbreviated">${game.abbreviated != null ? game.abbreviated : game.title}</span></li>
+			  </a>
 		`;
 	}
 	document.getElementById("gamesList").innerHTML = s;
