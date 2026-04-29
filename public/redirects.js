@@ -12,6 +12,8 @@ function getRedirects()
         {name: "x", link: "https://twitter.com/waveparadigm"},
         {name: "bandcamp", link: "https://waveparadigm.bandcamp.com/"},
         {name: "music", link: "https://waveparadigm.bandcamp.com/"},
+		{name: "discord", link: "https://discord.com/invite/RZNyGTV8TF"},
+		{name: "discord-old", link: "https://discord.com/invite/AyKFm85"},
         {name: "slime64-music", link: "https://waveparadigm.bandcamp.com/album/slime-64-ost"},
         {name: "slime64-ost", link: "https://waveparadigm.bandcamp.com/album/slime-64-ost"},
         {name: "slime64-soundtrack", link: "https://waveparadigm.bandcamp.com/album/slime-64-ost"},
